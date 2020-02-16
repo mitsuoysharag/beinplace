@@ -1,0 +1,24 @@
+<div class="header-container container">
+  <img class="header-logo pointer" src="./assets/logo.png" alt="">
+  <div class="header-actions">
+    <button class="btn" (click)="redirect('')">Hombres</button>
+    <button class="btn" (click)="redirect('')">Mujeres</button>
+    <button class="btn" (click)="redirect('')">Niños</button>
+  </div>
+  <div class="menu-action header-actions">
+    <button class="btn" (click)="show_menu = true">
+      <i class="fa fa-bars"></i>
+    </button>
+  </div>
+</div>
+
+<div class="menu-container" [ngClass]="{ 'active': show_menu }">
+  <button class="menu-close btn" (click)="show_menu = false"><i class="fa fa-times"></i></button>
+  <button class="menu-action btn">Hombres</button>
+  <button class="menu-action btn">Mujeres</button>
+  <button class="menu-action btn">Niños</button>
+</div>
+
+<!-- <button class="header-action" routerLink="/home">
+      Inicio
+    </button> -->

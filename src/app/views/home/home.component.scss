@@ -1,0 +1,168 @@
+.announcement {
+  padding: 20px;
+  background-color: #f4f5fa;
+  text-align: center;
+  color: #979797;
+  .announcement-link {
+    margin-left: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.carousel {
+  height: calc(400px + 10vw);
+  background: linear-gradient(left, #ffffff7a 0%, #ffffff42 100%), url("https://cdn.shopify.com/s/files/1/2617/9878/files/avenue-shopify-theme.jpg?v=1575485883");
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .carousel-title {
+    padding: 20px;
+    font-size: calc(20px + 4vw);
+    font-weight: bold;
+    color: #fff;
+    border: 8px solid #fff;
+  }
+}
+
+.products-container {
+  .products-search {
+    padding: 20px 20px 0 20px;
+    background-color: #f4f5fa;
+    .products-search-action {
+      padding-bottom: 20px
+    }
+  }
+  .products-content {
+    padding: 60px 0;
+    .products-scroll {
+      padding: 10px 0;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scroll-snap-type: x proximity;
+      &>* {
+        scroll-snap-align: start;
+      }
+      .product-container {
+        margin: 8px;
+        transition: .3s;
+        border: 1px solid #edeef4;
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+          0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+        }
+        img {
+          padding: 1px;
+          width: 100%;
+        }
+        .product-detail {
+          padding: 20px;
+          .product-name {
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: calc(12px + .5vw);
+          }
+          .product-price {
+            color: #d6170e;
+            font-weight: bold;
+            font-size: calc(18px + .5vw);
+          }
+          .product-price2 {
+            padding-left: 10px;
+            color: #d6170e;
+            font-weight: lighter;
+            font-size: calc(10px + .5vw);
+            text-decoration: line-through;
+          }
+        }
+        .product-actions {
+          padding: 0 10px 10px 10px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 10px;
+        }
+      }
+    }
+  }
+}
+
+.post-container {
+  height: calc(160px + 30vw);
+  background-image: linear-gradient(left, #67676775 0%, #81818100 100%), url('https://i0.wp.com/www.progressivemedicalcenter.com/wp-content/uploads/2019/04/White-wall-white-seamless-pattern-for-website-background.jpg?ssl=1');
+  .container {
+    height: 100%;
+  }
+  .post-grid {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+    .post-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+    .post-content {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      .post-title {
+        margin: 0 0 18px 0;
+        font-size: calc(16px + min(3vw, 40px));
+        font-weight: bold;
+        letter-spacing: -1px;
+      }
+      .post-description {
+        margin: 0 0 18px 0;
+        font-size: calc(8px + 2vw);
+        letter-spacing: -1px;
+      }
+    }
+  }
+}
+
+.services-container {
+  padding: 120px 10px;
+  .service-container {
+    text-align: center;
+    .service-icon {
+      margin: 0 0 20px 0;
+      font-size: calc(40px + 1vw);
+      color: #003a6d;
+    }
+    .service-name {
+      font-size: calc(10px + 1vw);
+      font-weight: bold;
+      color: #003a6d;
+    }
+  }
+}
+
+.contact-container {
+  padding: 50px 10px 70px 10px;
+  background: #f4f5fa;
+  .contact-title {
+    color: #4b4b4b;
+    font-size: calc(20px + 1vw);
+    text-align: center;
+  }
+  .contact-content {
+    max-width: 700px;
+    margin: 0 auto;
+    .contact-action {
+      margin: 5px 0;
+    }
+  }
+}

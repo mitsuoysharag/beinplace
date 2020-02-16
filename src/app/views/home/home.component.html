@@ -1,0 +1,95 @@
+<div class="announcement">
+  <span>¡50% de descuento en prendas para hombres!</span>
+  <span class="announcement-link">Ver</span>
+</div>
+
+<div class="carousel">
+  <span class="carousel-title container">Compra en un solo lugar</span>
+</div>
+
+<div class="products-container">
+  <div class="products-search">
+    <div class="container">
+      <div class="row">
+        <div class="products-search-action col-12 col-md-3">
+          <select class="select">
+            <option value="">Hombres</option>
+            <option value="">Mujeres</option>
+            <option value="">Niños</option>
+          </select>
+        </div>
+        <div class="products-search-action col-12 col-md-3">
+          <select class="select">
+            <option value="">option 1</option>
+            <option value="">option 2</option>
+            <option value="">option 3</option>
+          </select></div>
+        <div class="products-search-action col-12 col-md-3">
+          <select class="select">
+            <option value="">option 1</option>
+            <option value="">option 2</option>
+            <option value="">option 3</option>
+          </select></div>
+        <div class="products-search-action col-12 col-md-3">
+          <div class="btn btn-red">Buscar</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="products-content container">
+    <div class="products-scroll row no-gutters">
+      <div class="col-6 col-md-4 col-lg-3" *ngFor='let product of products'>
+        <div class="product-container">
+          <img [src]=product.img alt="">
+          <div class="product-detail">
+            <div class="product-name">{{product.name}}</div>
+            <span class="product-price">S/{{product.price}}</span>
+            <span *ngIf='product.price2' class="product-price2">S/{{product.price2}}</span>
+          </div>
+          <div class="product-actions">
+            <div class="btn btn-red-alt">Ver</div>
+            <div class="btn btn-red">Comprar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="post-container">
+  <div class="container">
+    <div class="post-grid">
+      <div class="post-img">
+        <img src="https://www.stickpng.com/assets/images/580b57fbd9996e24bc43bf4f.png" alt="">
+      </div>
+      <div class="post-content">
+        <p class="post-title">Promoción en Polos</p>
+        <p class="post-description">50% de descuento</p>
+        <button class="post-action btn btn-red-alt">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="services-container container">
+  <div class="row">
+    <div class="service-container col-4" *ngFor='let service of services'>
+      <p class="service-icon"><i [ngClass]="'fa fa-' + service.icon"></i></p>
+      <p class="service-name">{{service.name}}</p>
+    </div>
+  </div>
+</div>
+
+<div class="contact-container">
+  <div class="container">
+    <h1 class="contact-title">Contáctanos</h1>
+    <div class="contact-content">
+      <input class="ipt" type="text" placeholder="Nombre">
+      <input class="ipt" type="text" placeholder="Email">
+      <input class="ipt" type="text" placeholder="Asunto">
+      <textarea class="txt-area" rows="10" placeholder="Escribe tu mensaje aquí"></textarea>
+      <div class="contact-action btn btn-red">Enviar</div>
+    </div>
+  </div>
+</div>

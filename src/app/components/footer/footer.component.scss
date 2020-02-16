@@ -1,0 +1,35 @@
+@import '../../../styles/color.scss';
+
+.footer-container {
+  padding: 20px 0;
+  .footer-redes {
+    bottom: 0; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .footer-red {
+      margin: 0 12px;
+      font-size: 30px;
+      width: 60px;
+      height: 60px;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+
+      &.footer-facebook {
+        color: $color-facebook !important;
+      }
+      &.footer-twitter {
+        color: $color-twitter;
+      }
+      &.footer-instagram {
+        color: $color-instagram;
+      }
+      &.footer-youtube {
+        color: $color-youtube;
+      }
+    }
+  }
+}
